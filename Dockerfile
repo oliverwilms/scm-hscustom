@@ -1,4 +1,5 @@
 ARG IMAGE=quay.vapo.va.gov/helm/irishealth/irishealth
+ARG IMAGE=quay.vapo.va.gov/scm/irishealth/irishealth:latest
 FROM $IMAGE AS src
 
 #-Labels------------------------------------------------------------------------
