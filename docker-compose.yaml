@@ -1,0 +1,15 @@
+version: '3.6'
+services:
+  iris:
+#    build: 
+#      context: .
+#      dockerfile: Dockerfile
+    image: helm-valip-quay-quay-quay.apps.vapo-aws-dsoi-dev.va.gov/helm/helm-valip-iris-hscustom:latest
+    restart: always
+    command: --check-caps false
+    ports: 
+      - 1972
+      - 57700:52773
+      - 53773
+    volumes:
+      - ./:/irisdev/app
